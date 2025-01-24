@@ -15,7 +15,7 @@
     Paul SCHMITT | French Network & Telecoms Student
   </title>
 
-  <meta name="description" content="Add small description of yourslef.">
+  <meta name="description" content="Add small description of yourself.">
   <!-- Add some coding keywords below, Ex: (React, CSS etc) -->
   <meta name="keywords" content="Put your name, skills and some coding keywords" />
   <link rel="stylesheet" href="index.css" />
@@ -29,8 +29,8 @@
     <div class="row">
       <nav class="nav" role="navigation">
         <ul class="nav__items">
-          <li class="nav__item"><a href="#work" class="nav__link">Work</a></li>
-          <li class="nav__item"><a href="#clients" class="nav__link">Clients</a></li>
+          <li class="nav__item"><a href="#work" class="nav__link">Mes Travaux</a></li>
+          <li class="nav__item"><a href="#clients" class="nav__link">Collaboration</a></li>
           <li class="nav__item">
             <a href="#about" class="nav__link">A propos</a>
           </li>
@@ -65,56 +65,52 @@
           <!-- Each div with the work__box class is a project. -->
 
           <div class="work__box">
-            <div class="work__text">
-              <h3>Mon Portfolio</h3>
+            <div class="dhclient__text">
+              <h3>dhclient</h3>
               <p>
-                Vision d'ensemble des mes projets. (WIP)
+                dhclient est un script que j'ai développé pour macOS.
+                Il reprend le concept de la commande du même nom sous Linux qui permet de gérer les adresses IP dynamiques en utilisant le protocole DHCP.
+                Ce script est utile pour les administrateurs système et les utilisateurs avancés qui ont besoin de configurer 
+                et de gérer les paramètres réseau de manière efficace.
               </p>
+              <!--
               <ul class="work__list">
                 <li>Bash</li>
                 <li>Python</li>
                 <li>PowerShell</li>
               </ul>
-              <div class="work__image-box">
-                <img src="./images/output_dhclient.png" class="work__image" alt="dhclient" />
+              -->
+              <div class="dhclient_image">
+                <img src="./images/output_dhclient.png" class="work__image" alt="Terminal Output" />
               </div>
+                <p><i>Voici une capture d'une sortie de mon programme dans le cas ou l'utilisateur souhaite obtenir un bail DHCP</i></p>
               <div class="work__links">
-                <a href="https://nisar.surge.sh" target="_blank" class="link__text">
-                  Visit Site <span>&rarr;</span>
+                <a href="https://github.com/P1nguNix/dhclient" target="_blank" class="link__text">
+                  Code source disponible ici <span>&rarr;</span>
                 </a>
-                <a href="https://github.com/P1nguNix/" title="View Source Code" target="_blank">
-                  <img src="./images/github.svg" class="work__code" alt="GitHub">
-                </a>
+                <!--
+                  <a href="https://github.com/P1nguNix/" title="View Source Code" target="_blank">
+                    <img src="./images/github.svg" class="work__code" alt="GitHub">
+                  </a>
+                -->
               </div>
             </div>
           </div>
-          <!--
           <div class="work__box">
-            <div class="work__text">
-              <h3>Calculator</h3>
-              <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod,
-                eius.
+            <div class="dhclient__text">
+              <h3>scaninterfaces</h3> <!-- Titre du projet -->
+              <p> <!-- Description du projet -->
+                scaninterfaces est un script que j'ai développé pour macOS.
+                Il se base sur la commande <code>ifconfig</code> dont j'ai retravaillé l'affichge pour le rendre plus lisible.
               </p>
-              <ul class="work__list">
-                <li>React</li>
-                <li>Next.js</li>
-                <li>Node</li>
-                <li>MongoDB</li>
-              </ul>
-
-              <div class="work__links">
-                <a href="#" class="link__text">
-                  Visit Site <span>&rarr;</span>
-                </a>
-                <a href="#">
-                  <img src="./images/github.svg" class="work__code" title="View Source Code" alt="GitHub">
-                </a>
+              <div class="dhclient_image">
+                <img src="./images/output_dhclient.png" class="work__image" alt="Terminal Output" /> <!-- Image du projet -->
               </div>
-              -->
-            </div>
-            <div class="work__image-box">
-            </div>
+              <p><i>Capture à modifier, c'est juste pour le test</i></p> <!-- Légende de l'image -->
+              <div class="work__links">
+                <a href="https://github.com/P1nguNix/scaninterfaces" target="_blank" class="link__text"> <!-- Lien vers le code source -->
+                  Code source disponible ici <span>&rarr;</span></a> <!-- Texte du lien -->
+              </div>
           </div>
 <!--
           <div class="work__box">
@@ -153,10 +149,10 @@
 
     <section class="client" id="clients">
       <div class="row">
-        <h2>Clients</h2>
+        <h2>Ils ont bénéficié de mes services</h2>
         <div class="client__logos">
           <!-- Add logos of the clients or companies you'have worked with. -->
-          <img src="./images/Logo\ METTAM.png" class="client__logo" alt="Company 2" />
+          <img src="./images/Logo_METTAM.png" class="client__logo" alt="Company 2" />
           <img src="./images/CDA_logo.svg.png" class="client__logo" alt="Company 3" />
         </div>
       </div>
@@ -176,7 +172,7 @@
               supervision des réseaux, et le déploiment de services réseaux.
             </p>
             <!-- Provide a link to your resume -->
-            <a href="#" class="btn">Ma Présentation</a>
+            <a href="" class="btn">Ma Présentation Complète</a>
           </div>
 
           <div class="about__photo-container">
