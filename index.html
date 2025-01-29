@@ -8,7 +8,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="shortcut icon" type="image/png" href="./images/favicon.png" />
+  <link rel="shortcut icon" type="image/png" href="./images/Logo_RTLR_cybersecurité_orange.png" />
 
   <!-- Put your site title here -->
   <title>
@@ -22,21 +22,15 @@
 </head>
 
 <body>
-
   <!-- ***** Header ***** -->
-
   <header class="header" role="banner" id="top">
     <div class="row">
       <nav class="nav" role="navigation">
         <ul class="nav__items">
           <li class="nav__item"><a href="#work" class="nav__link">Mes Travaux</a></li>
           <li class="nav__item"><a href="#clients" class="nav__link">Collaboration</a></li>
-          <li class="nav__item">
-            <a href="#about" class="nav__link">A propos</a>
-          </li>
-          <li class="nav__item">
-            <a href="#contact" class="nav__link">Contact</a>
-          </li>
+          <li class="nav__item"><a href="#about" class="nav__link">A propos</a></li>
+          <li class="nav__item"><a href="#contact" class="nav__link">Contact</a></li>
         </ul>
       </nav>
     </div>
@@ -68,18 +62,11 @@
             <div class="dhclient__text">
               <h3>dhclient</h3>
               <p>
-                dhclient est un script que j'ai développé pour macOS.
+                dhclient est un script que j'ai développé en bash pour macOS.
                 Il reprend le concept de la commande du même nom sous Linux qui permet de gérer les adresses IP dynamiques en utilisant le protocole DHCP.
                 Ce script est utile pour les administrateurs système et les utilisateurs avancés qui ont besoin de configurer 
                 et de gérer les paramètres réseau de manière efficace.
               </p>
-              <!--
-              <ul class="work__list">
-                <li>Bash</li>
-                <li>Python</li>
-                <li>PowerShell</li>
-              </ul>
-              -->
               <div class="dhclient_image">
                 <img src="./images/output_dhclient.png" class="work__image" alt="Terminal Output" />
               </div>
@@ -88,11 +75,6 @@
                 <a href="https://github.com/P1nguNix/dhclient" target="_blank" class="link__text">
                   Code source disponible ici <span>&rarr;</span>
                 </a>
-                <!--
-                  <a href="https://github.com/P1nguNix/" title="View Source Code" target="_blank">
-                    <img src="./images/github.svg" class="work__code" alt="GitHub">
-                  </a>
-                -->
               </div>
             </div>
           </div>
@@ -100,46 +82,35 @@
             <div class="dhclient__text">
               <h3>scaninterfaces</h3> <!-- Titre du projet -->
               <p> <!-- Description du projet -->
-                scaninterfaces est un script que j'ai développé pour macOS.
+                scaninterfaces est un script que j'ai développé en bash pour macOS.
                 Il se base sur la commande <code>ifconfig</code> dont j'ai retravaillé l'affichge pour le rendre plus lisible.
               </p>
               <div class="dhclient_image">
-                <img src="./images/output_dhclient.png" class="work__image" alt="Terminal Output" /> <!-- Image du projet -->
+                <img src="./images/scaninterfaces.png" class="work__image" alt="Terminal Output" /> <!-- Image du projet -->
               </div>
-              <p><i>Capture à modifier, c'est juste pour le test</i></p> <!-- Légende de l'image -->
+              <p><i>Voici un appel du programme permettant de résumer la configuration actuelle</i></p> <!-- Légende de l'image -->
               <div class="work__links">
                 <a href="https://github.com/P1nguNix/scaninterfaces" target="_blank" class="link__text"> <!-- Lien vers le code source -->
                   Code source disponible ici <span>&rarr;</span></a> <!-- Texte du lien -->
               </div>
+            </div>
           </div>
-<!--
-          <div class="work__box">
-            <div class="work__text">
-              <h3>Notificator</h3>
+          <div>
+            <div class="dhclient__text">
+              <h3>proxmox_import_ova</h3>
               <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod,
-                eius.
+                proxmox_import_ova est un script que j'ai développé en bash pour Proxmox.
+                Il permet d'exporter une machine virtuelle au format OVA sur VirtualBox depuis la machine locale vers un serveur Proxmox.
               </p>
-              <ul class="work__list">
-                <li>React</li>
-                <li>Next.js</li>
-                <li>Node</li>
-                <li>MongoDB</li>
-              </ul>
-
+              <div class="dhclient_image">
+                <img src="./images/output_proxmox_script.png" class="work__image" alt="Terminal Output" />
+              </div>
+              <p><i>Voici un extrait de la sortie du script, une deuxième est disponible sur la page du code source.</i></p>
               <div class="work__links">
-                <a href="#" class="link__text">
-                  Visit Site <span>&rarr;</span>
-                </a>
-                <a href="#">
-                  <img src="./images/github.svg" class="work__code" title="View Source Code" alt="GitHub">
+                <a href="https://github.com/P1nguNix/proxmox_import_ova" target="_blank" class="link__text">
+                  Code source disponible ici <span>&rarr;</span>
                 </a>
               </div>
-            </div>
-      
-            <div class="work__image-box">
-              <img src="./images/project-3.png" class="work__image" alt="Project 3" />
-            </div> -->
           </div>
         </div>
       </div>
@@ -172,7 +143,7 @@
               supervision des réseaux, et le déploiment de services réseaux.
             </p>
             <!-- Provide a link to your resume -->
-            <a href="" class="btn">Ma Présentation Complète</a>
+            <a href="presentation.html" class="btn">Ma Présentation Complète</a>
           </div>
 
           <div class="about__photo-container">
