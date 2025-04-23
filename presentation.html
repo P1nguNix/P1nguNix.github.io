@@ -1,64 +1,144 @@
 <!DOCTYPE html>
-<html lang="en">
-
+<html lang="fr">
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="shortcut icon" type="image/png" href="./images/Logo_RTLR_cybersecurite_orange.png" />
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Portfolio</title>
+  <link rel="stylesheet" href="index.css" />
+  <style>
+    .fade-in {
+      opacity: 0;
+      transform: translateY(20px);
+      transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+    }
 
-    <!-- Put your site title here -->
-    <title>
-    Ma Présentation
-    </title>
-
-    <meta name="description" content="Add small description of yourself.">
-    <!-- Add some coding keywords below, Ex: (React, CSS etc) -->
-    <meta name="keywords" content="Put your name, skills and some coding keywords" />
-    <link rel="stylesheet" href="index.css" />
+    .fade-in.visible {
+      opacity: 1;
+      transform: none;
+    }
+  </style>
 </head>
 <body>
-    <header class="header" role="banner" id="top">
-        <div class="row">
-            <nav class="nav" role="navigation">
-                <ul class="nav__items">
-                    <li class="nav__item"><a href="index.html#work" class="nav__link">Mes Travaux</a></li>
-                    <li class="nav__item"><a href="index.html#clients" class="nav__link">Collaboration</a></li>
-                    <li class="nav__item"><a href="index.html#about" class="nav__link">A propos</a></li>
-                    <li class="nav__item"><a href="index.html#contact" class="nav__link">Contact</a></li>
-                </ul>
-            </nav>
-        </div>
-        <div class="header__text-box row">
-            <div class="header__text">
-                <h1 class="heading-primary">
-                    <span>Paul SCHMITT</span>
-                </h1>
-            </div>
-        </div>
-    </header>
-    <main>
-        
-    </main>
-    <footer role="contentinfo" class="footer">
-        <div class="row">
-          <!-- Update the links to point to your accounts -->
-          <ul class="footer__social-links">
-            <li class="footer__social-link-item">
-              <a href="https://github.com/P1nguNix/" title="Link my Github Profile">
-                <img src="./images/github.svg" class="footer__social-image" alt="Github">
-              </a>
-            </li>
-            <li class="footer__social-link-item">
-              <a href=https://www.linkedin.com/in/schmitt-paul/">
-                <img src="./images/linkedin.svg" title="Link to Linkedin Profile" class="footer__social-image" alt="Linkedin">
-              </a>
-            </li>
-          </ul>
-        </div>
-      </footer>
-    
-      <a href="#top" class="back-to-top" title="Back to Top">
-        <img src="./images/arrow-up.svg" alt="Back to Top" class="back-to-top__image"/>
-      </a>
-      <script src="./index.js"></script>
+  
+  <!-- NAVIGATION -->
+  <header class="header" role="banner" id="top">
+    <div class="row">
+      <nav class="nav" role="navigation">
+        <ul class="nav__items">
+          <li class="nav__item"><a href="index.html#accueil" class="nav__link">Accueil</a></li>
+          <li class="nav__item"><a href="#experiences" class="nav__link">Expériences</a></li>
+          <li class="nav__item"><a href="#contact" class="nav__link">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+    <div class="header__text-box row">
+      <div class="header__text">
+        <h1 class="heading-primary">
+          Bonjour, moi c’est Paul SCHMITT
+        </h1>
+        <p>
+          Étudiant en Réseaux, Télécoms & IT. Passionné par l'administration système, l'infrastructure réseau et la cybersécurité.
+        </p>
+        <p>
+            Depuis quelques années, je me spécialise dans la gestion des infrastructures réseaux et serveurs,
+            ainsi que le scripting pour automatiser et améliorer les processus. J'ai eu l'opportunité de travailler sur
+            des projets concrets, dont l'administration de serveurs, l’intégration de solutions de supervision, et bien plus.
+        </p>
+        <a href="#experiences" class="btn btn--pink">
+          Voir mes projets
+        </a>
+      </div>
+    </div>
+  </header>
+
+
+  <!-- EXPERIENCES & COMPETENCES -->
+  <section class="row fade-in" id="experiences">
+    <h2>Expériences et Compétences</h2>
+  
+    <!-- Expérience 1 -->
+    <div class="work__box">
+      <div class="work__text">
+        <h3>Stage - CDA La Rochelle</h3>
+        <p>Stage de 2 mois axé sur le scripting PowerShell :</p>
+        <ul class="work__list">
+          <li>Import de sessions PowerShell (Remote PowerShell)</li>
+          <li>Interrogation de l’Active Directory (AD)</li>
+          <li>Création de boîtes mail Exchange liées aux comptes AD</li>
+        </ul>
+      </div>
+      <div class="work__image-box">
+        <img src="/images/cda.png" alt="Illustration CDA" />
+      </div>
+    </div>
+  
+    <!-- Expérience 2 (inversée) -->
+    <div class="work__box work__box--reverse">
+      <div class="work__image-box">
+        <img src="/images/facade_mettam.jpeg" alt="Illustration METTAM Radiocom" />
+      </div>
+      <div class="work__text">
+        <h3>Stage - METTAM Radiocom</h3>
+        <p>Actuellement en stage, mes missions incluent :</p>
+        <ul class="work__list">
+          <li>Installation et configuration d’un serveur FOG</li>
+          <li>Travail sur le logiciel TRBOnet (Motorola)</li>
+          <li>Configuration et gestion du logiciel HIKCentral</li>
+        </ul>
+      </div>
+    </div>
+  
+    <!-- Compétences -->
+    <div class="work__box">
+      <div class="work__text">
+        <h3>Compétences clés</h3>
+        <ul class="work__list">
+          <li><strong>Langages :</strong> Bash, PowerShell</li>
+          <li><strong>OS/Plateformes :</strong> GNU/Linux, XNU/Darwin, FreeBSD/pfsense, Stormshield, Windows 10/11, Windows Server (AD, DHCP), Proxmox</li>
+          <li><strong>Outils :</strong> Supervision, Wireshark, Git</li>
+          <li><strong>Réseaux :</strong> IPv4, analyse de paquets</li>
+        </ul>
+      </div>
+      <div class="work__image-box">
+        <img src="/images/Tools_Admins.jpg" alt="Compétences" />
+      </div>
+    </div>
+  </section>
+  
+
+  <!-- CONTACT -->
+  <section class="row" id="contact">
+    <h2>Contact</h2>
+    <p>Vous souhaitez discuter projet ou stage ? </p>
+    <p><a class="link__text" href="mailto:paulschmitt21@gmail.com">Écrivez-moi -></a></p>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <ul class="footer__social-links">
+      <li class="footer__social-link-item"><a href="#"><img src="./images/github.svg" alt="GitHub" class="footer__social-image"></a></li>
+      <li class="footer__social-link-item"><a href="#"><img src="./images/linkedin.svg" alt="LinkedIn" class="footer__social-image"></a></li>
+    </ul>
+    <p>© 2025 - SCHMITT Paul. Tous droits réservés.</p>
+  </footer>
+
+  <script>
+    // Animation au scroll
+    const faders = document.querySelectorAll('.fade-in');
+    const appearOptions = { threshold: 0.2, rootMargin: "0px 0px -50px 0px" };
+
+    const appearOnScroll = new IntersectionObserver(function(entries, appearOnScroll) {
+      entries.forEach(entry => {
+        if (!entry.isIntersecting) return;
+        entry.target.classList.add('visible');
+        appearOnScroll.unobserve(entry.target);
+      });
+    }, appearOptions);
+
+    faders.forEach(fader => {
+      appearOnScroll.observe(fader);
+    });
+  </script>
+
 </body>
+</html>

@@ -626,3 +626,21 @@ body:not(.user-is-tabbing) a:focus {
         padding: var(--gutter-medium) 0;
     } 
 }
+
+.work__box {
+    display: flex;
+    align-items: center;
+    gap: var(--gutter-medium);
+}
+
+.work__box--reverse {
+    flex-direction: row-reverse;
+}
+
+@media (max-width: 900px) {
+    .work__box,
+    .work__box--reverse {
+        flex-direction: column;
+        text-align: left;
+    }
+}
